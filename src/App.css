@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoraton:none;
+}
+
+body {
+/*   font-family: 'Roboto', sans-serif; */
+  font-family: 'Creepster', cursive;
+/*   overflow-x:hidden; */
+}
+.main-text{
+/*   font-family: 'Nosifer', cursive; */
+  font-family: 'Creepster', cursive;
+/*   top:120px; */
+  color:#141414;
+  margin-top:60px;
+  margin-bottom:20px;
+}
+
+.main-body {
+  width:100vw;
+  height:100vh;
+  overflow-x: hidden;
+}
+
+img {
+  display:flex;
+}
+.container {
+  background:#131313;
+  width:300px;
+  padding:20px;
+  margin: 10px auto;
+}
+li{
+  line-Height: 45px
+}
+
+
+.nav_btn {
+  font-family: 'Creepster', cursive;
+  background:#FDC739;
+  padding:8px;
+  color:black;
+  border:2px solid #FDC739;
+  margin:5px;
+  width:120px;
+  cursor:pointer;
+}
+
+.btn {
+  margin:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+input{
+  font-family: 'Creepster', cursive;
+  outline:none;
+  padding:7px;
+  margin-top:10px;
+  width: 270px;
+  background:#D3D4D6;
+}
+
+.fallback{
+  margin:20px;
+  padding:10px;
+  background:#FDC739;
+  text-align:center;
+}
+
+.challenges{
+  background:#292929;
+  height:fit-content;
+  overflow-x:hidden;
+  display:flex;
+ align-items:center;
+  justify-content:center;
+}
+
+.challenge{
+  width:300px;
+  height:fit-content;
+  border:2px solid black;
+  margin:30px 0px;
+  padding:10px;
+}
+
+.scare-btn{
+  background:transparent;
+  border:1px solid transparent; 
+}
+
+.scare-btn:active{
+  background:red;
+}
+
+#playAudio{
+  font-size:25px;
+  position:absolute;
+   top:20px;
+  right:25px;
+  background:transparent;
+  border:1px solid transparent;
+}
+
+.home-btn{
+  display:flex;
+  align-items:center;
+   justify-content:center;
+  margin:35px auto 10px auto;
+  border:1px solid transparent;
+  background:transparent;
+  font-size:27px;
+  font-family: 'Creepster', cursive;
+}
+
+.nav_btn2{
+  padding:7px;
+  background:#D3D4D6;
+  border:1px solid #D3D4D6; 
+  font-family: 'Creepster', cursive;
+  margin-top:10px;
+}

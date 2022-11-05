@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Spooktober</title>
+    <link rel="stylesheet" href="/src/App.css" />
+    <link rel="icon" href="/src/spooky.png" type="image/png">
+  </head>
+  <body id="container">
+    <div id="root"></div>
+
+    <audio autoplay loop id="testAudio" src="/src/spooky_tone.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playAudio">⏸️</button>
+
+<script type="text/javascript">
+document.getElementById("playAudio").addEventListener("click", function(){
+    var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "⏸️"
+    audio.play();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "▶️";
+    audio.pause();
+  }
+
+});
+</script>
+    <script type="module" src="/src/index.jsx"></script>
+		
+    <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+<!--     <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+  </body>
+</html>
